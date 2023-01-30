@@ -1,19 +1,27 @@
 import React from 'react';
+import { createRoot } from 'react-dom/client';
+import { Layout } from './common/layout';
 
-import { Header } from './header';
+import '../assets/styles/main.less';
 
-export class App extends React.Component {
+import '@fontsource/raleway';
+import '@fontsource/sacramento';
+
+const config = require('../config/app-config');
+
+class App extends React.Component {
     public render(): React.ReactNode {
-        return(
-            <Header appName='Jolinoeud' />
+        return (
+            <Layout
+                appName={config.app.name}
+                appVersion={config.app.version}
+                firstVisit={true}
+                showHeader={true}
+                showFooter={true}
+            />
         );
     }
-
-    public componentDidMount(): void {
-        console.log("coucou");
-    }
-
-    public componentWillUnmount(): void {
-        console.log("coucou2");
-    }
 }
+
+const root = createRoot(document.getElementById('app'));
+root.render(<App />);

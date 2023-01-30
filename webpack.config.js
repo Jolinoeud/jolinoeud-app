@@ -4,7 +4,7 @@ const isProduction = process.env.NODE_ENV == 'production';
 const stylesHandler = 'style-loader';
 
 const config = {
-    entry: './src/main.tsx',
+    entry: './src/app.tsx',
     output: {
         filename: 'main.js',
         path: path.resolve(__dirname, 'public'),
@@ -44,7 +44,7 @@ const config = {
     },
     resolve: {
         extensions: ['.tsx', '.ts', '...'],
-    },
+    }
 };
 
 module.exports = () => {

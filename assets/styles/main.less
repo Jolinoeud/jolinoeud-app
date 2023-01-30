@@ -1,4 +1,62 @@
 @import 'common/reset';
+@import 'common/fonts';
 @import 'common/colors';
 
 @import 'header';
+@import 'pages/splash-screen';
+
+@screenMaxSize: 144rem;
+@itemsVerticalSpacing: 2rem;
+@boxRadius: 0.5rem;
+@boxShadow: 0 2px 30px rgb(0 0 0 / 10%);
+
+html {
+    font-size: 62.5%;
+
+    body {
+        font-family: @fontFamilyPrimary;
+        font-size: 1.4em;
+        font-weight: @fontWeightRegular;
+        color: @black;
+
+        h1, h2, h3, h4, h5{
+            margin: 0;
+	        padding: 0;
+            font-weight: @fontWeightRegular;
+        }
+
+        h2{
+            font-family: @fontFamilySecondary;
+        }
+
+
+        a{
+            color: @black;
+            text-decoration: none;
+
+            &:visited,
+            &:hover{
+                color: initial;
+                text-decoration: none;
+            }
+        }
+
+        a, button, input{
+            &.cta-primary{
+                padding: 10px;
+                background-color: @pink;
+                border: none;
+                border-radius: @boxRadius;
+                font-weight: @fontWeightBold;
+                color: @white;
+                cursor: pointer;
+                transition: opacity .25s ease-out;
+                -webkit-transition: opacity .25s ease-out;
+                -moz-transition: opacity .25s ease-out;
+                -o-transition: opacity .25s ease-out;
+                -webkit-appearance: none;
+                -webkit-font-smoothing: subpixel-antialiased;
+            }
+        }
+    }
+}
