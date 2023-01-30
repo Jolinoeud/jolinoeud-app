@@ -26,7 +26,7 @@ export class Layout extends React.Component<ILayoutProps> {
 
         if (this.props.showHeader) {
             header = <Header
-                lockTransparency={false}
+                keepTransparency={false}
                 appName={this.props.appName}
                 instagramUrl='ff'
             />;

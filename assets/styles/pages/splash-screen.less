@@ -1,7 +1,29 @@
 #splash-screen{
+    height: 100vh;
+    padding: 25rem 4rem;
     background-color: @smoothWhite;
     display: flex;
     justify-content: space-between;
+
+    #welcome{
+        display: flex;
+        flex-direction: column;
+
+        span{
+            display: block;
+            font-weight: @fontWeightLight;
+            font-size: 2.4rem;
+
+            &:last-child{
+                margin-left: auto;
+                color: @grey;
+            }
+        }
+
+        #logo{
+            font-size: 100px;
+        }
+    }
 
     #intro{
         h2{
@@ -10,6 +32,8 @@
 
         p{
             margin: @itemsVerticalSpacing 0 calc(@itemsVerticalSpacing * 2);
+            font-size: 2.4rem;
+            font-weight: @fontWeightLight;
         }
     }
 }

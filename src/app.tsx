@@ -4,9 +4,6 @@ import { Layout } from './common/layout';
 
 import '../assets/styles/main.less';
 
-import '@fontsource/raleway';
-import '@fontsource/sacramento';
-
 const config = require('../config/app-config');
 
 class App extends React.Component {

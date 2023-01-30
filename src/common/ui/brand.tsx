@@ -7,7 +7,7 @@ export interface ILogoProps {
 export class Logo extends React.Component<ILogoProps> {
     public render(): React.ReactNode {
         return (
-            <h1>{this.props.appName}</h1>
+            <h1 id="logo">{this.props.appName}</h1>
         );
     }
 }

@@ -6,7 +6,7 @@ import { Logo } from './ui/brand';
 
 
 export interface IHeaderProps {
-    lockTransparency: boolean;
+    keepTransparency: boolean;
     appName: string;
     instagramUrl: string;
 }

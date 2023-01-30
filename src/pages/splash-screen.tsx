@@ -12,8 +12,8 @@ export class SplashScreen extends React.Component<ISplashScreenProps> {
     public render(): React.ReactNode {
         return(
             <section id="splash-screen">
-                <div>
-                    <label>Bienvenue sur</label>
+                <div id="welcome">
+                    <span>Bienvenue sur</span>
                     <Logo appName={this.props.appName} />
                     <span>v.{this.props.appVersion}</span>
                 </div>
